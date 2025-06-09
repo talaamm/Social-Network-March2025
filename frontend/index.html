@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NTLink App</title>
+    <style>
+        /* General Styles */
+        
+        body {
+            font-family: sans-serif;
+            /* Use a clean, cross-browser font */
+            margin: 0;
+            /* Remove default body margins */
+            padding: 0;
+            /* Remove default body padding */
+            background-color: #f4f4f4;
+            /* Light gray background for the entire page */
+            color: #333;
+            /* Dark gray text color for better contrast */
+            display: flex;
+            /* Enable Flexbox for centering */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            /* min-height: 100vh; */
+            /* Ensure full viewport height */
+        }
+        
+        #app {
+            background-color: #fff;
+            /* White background for the app container */
+            padding: 20px;
+            /* Add some padding around the app content */
+            border-radius: 8px;
+            /* Rounded corners for the app container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+            max-width: 90%;
+            /* Limit the maximum width to 90% of the viewport */
+            width: auto;
+            min-width: 600px;
+            /* Or a fixed width, if you prefer */
+        }
+        /* Add more specific styles for elements within #app as needed */
+        /* Example: */
+        
+        #app h1 {
+            color: #007bff;
+            /* Blue heading */
+            text-align: center;
+        }
+        
+        #app button {
+            background-color: #007bff;
+            /* Green */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+        }
+        
+        #app button:hover {
+            background-color: #0663c6;
+            /* Darker green */
+        }
+        /* Responsive Design (Example) */
+        
+        @media (max-width: 600px) {
+            #app {
+                width: 95%;
+                /* Make the app container wider on smaller screens */
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

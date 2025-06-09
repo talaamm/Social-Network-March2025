@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+# if daemon doesnt exist / docker desktop doesnt open use:
+# sudo launchctl remove com.docker.vmnetd
+
+# ---RUN--
+# to run install using:
+# brew install docker-compose (on mac)
+# then use:
+# docker-compose up --build 
+# that build the images and runs the container

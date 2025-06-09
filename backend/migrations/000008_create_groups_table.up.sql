@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS groups (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_name TEXT UNIQUE NOT NULL,
+    description TEXT,
+    creator_id INTEGER NOT NULL,
+    FOREIGN KEY (creator_id) REFERENCES users(id) ON DELETE CASCADE 
+);

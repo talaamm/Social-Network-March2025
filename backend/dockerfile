@@ -1,0 +1,12 @@
+# did sudo launchctl remove com.docker.vmnetd for the desktop to open
+FROM golang
+
+WORKDIR /backend
+
+COPY . .
+
+RUN go build -o main .
+
+EXPOSE 8080
+
+CMD ["./main"]
