@@ -28,19 +28,37 @@ This was a group project. The team members are:
 ## Features
 
 - **Authentication:** Registration and login with sessions and cookies. Supports email, password, first/last name, age, date of birth, and a username.
-![alt text](login.png)
-![alt text](reg.png)
+
+![alt text](./assets/login.png)
+![alt text](./assets/reg.png)
 
 - **Followers:** Users can follow/unfollow others. Private profiles require approval for follow requests.
-![alt text](prvf.png)
+
+![alt text](./assets/prvf.png)
 
 - **Profiles:** Public/private profiles, user info, posts, followers/following/close friends lists, privacy toggle.
-![alt text](profile.gif)
+
+![alt text](./assets/profile.gif)
 
 - **Posts:** Create posts with images/GIFs, set privacy (public, followers, selected users), comment and like/dislike on posts.
+
+![alt text](./assets/image.png)
+
 - **Groups:** Create groups, invite users, accept/reject invitations, request to join, group posts/comments/likes, group name/description/creator, group events with RSVP, vote for events as going/not going, view group members, leave groups, group creator will delete the group if they leave.
+
+![alt text](./assets/image-1.png)
+![alt text](./assets/image-2.png)
+![alt text](./assets/groups.png)
+
 - **Chats:** Private messaging via WebSockets between users who follow each other or have public profiles. Group chat rooms for group members.
+
+![alt text](./assets/image-3.png)
+![alt text](./assets/image-4.png)
+
 - **Notifications:** Real-time notifications for follow requests, group invitations, group join requests, new group events, and more.
+
+![alt text](./assets/image-5.png)
+
 - **Migrations:** All database schema changes are managed via migrations for easy setup and testing.
 - **Dockerized:** Both backend and frontend are containerized for easy deployment and development.
 
@@ -100,13 +118,28 @@ This was a group project. The team members are:
    cd social-network
    ```
 
-2. **Build and run with Docker Compose:**
+2. **Build and run**
+   - with Docker Compose:
 
-   ```sh
-   docker-compose up --build
-   ```
+      ```sh
+      docker-compose up --build
+      ```
 
-   - The backend and frontend will be available on their respective ports (see `docker-compose.yml`).
+      - The backend and frontend will be available on their respective ports (see `docker-compose.yml`).
+   - run locally
+
+      ```sh
+      # in terminal 1
+      cd ./backend
+      go run .
+      ```
+
+      ```sh
+      # in terminal 2
+      cd ./frontend
+      npm install
+      npm run dev
+      ```
 
 ---
 
